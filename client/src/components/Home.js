@@ -7,7 +7,9 @@ class Home extends React.Component {
   render() {
     return (
       <div id='home' >
-        <h1>Welcome to Book2Book</h1>
+        <Link to='/allbooks'>
+          <h1>Welcome to Book2Book</h1>
+        </Link>
         <h4>Trade books with people in your area</h4>
         <Link to='/login'>
         	<RaisedButton label='Login' primary className='home-btns'/>

@@ -30,7 +30,6 @@ class MyBooksPage extends React.Component {
 
 	bookSearch(event) {
     event.preventDefault()
-
     const query = encodeURIComponent(this.state.query)
 
 		this.setState({
@@ -52,9 +51,7 @@ class MyBooksPage extends React.Component {
 	    			thumbnail = data.items[i].volumeInfo.imageLinks ? data.items[i].volumeInfo.imageLinks.thumbnail : null
 	    			searchResults.push({ title, author, thumbnail })
     			}
-    			
     		}
-    		
     		this.setState({
     			searchResults,
           searchLoading: false
@@ -62,10 +59,8 @@ class MyBooksPage extends React.Component {
     	},
     	error: (xhr,status,error) => {
     		console.log('ERROR!')
-    		console.log('status:')
-    		console.log(xhr.status)
-    		console.log('err message:')
-    		console.log(error)
+    		console.log('status:',xhr.status)
+    		console.log('err message:',error)
     	}
     })
 	}

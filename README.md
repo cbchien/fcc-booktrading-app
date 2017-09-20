@@ -6,4 +6,6 @@
 
 [Project Requirements](https://www.freecodecamp.org/challenges/manage-a-book-trading-club)
 
-Made Using [heroku-cra-node](https://github.com/mars/heroku-cra-node)
+Boilerplate [heroku-cra-node](https://github.com/mars/heroku-cra-node)
+UI Interface [Material-UI](http://www.material-ui.com/)
+Book search [Google API](https://www.googleapis.com/books/v1/volumes?q=google)

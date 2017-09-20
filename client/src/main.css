@@ -46,6 +46,7 @@ body {
  	margin: 5px;
  	background-color: #fff;
  	border: 1px #eee solid;
+ 	border-radius: 4px;
  	text-align: left;
  	padding: 5px;
  	display: flex;
