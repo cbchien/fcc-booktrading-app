@@ -1,24 +1,32 @@
 {
-  "name": "heroku-cra-node",
+  "name": "book-trading-club",
   "version": "1.0.0",
-  "description": "How to use create-react-app with a custom Node API on Heroku",
+  "description": "FreeCodeCamp Dynamic Web App Project - Manage a Book Trading Club",
   "engines": {
-    "node": "6.11.x"
+    "node": "7.8.0"
   },
   "scripts": {
-    "start": "node server",
-    "heroku-postbuild": "cd react-ui/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+    "start": "node index",
+    "bundle": "webpack",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "cacheDirectories": [
     "node_modules",
     "react-ui/node_modules"
   ],
   "dependencies": {
-    "express": "^4.14.1"
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.14.1",
+    "jsonwebtoken": "^7.4.2",
+    "mongoose": "^4.11.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "validator": "^8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mars/heroku-cra-node.git"
+    "url": "https://github.com/cbchien/fcc-booktrading-app.git"
   },
   "keywords": [
     "node",

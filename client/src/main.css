@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#app-bar {
+	text-align: left;
+}
+
+#flat-menu-container {
+	margin: 7px 0;
+}
+
+#home {
+	padding-top: 20vh;
+}
+.home-btns {
+	margin: 5px;
+}
+
+.divider {
+	width: 90%;
+	margin: 30px auto;
+}
+
+.dash-btn {
+	margin: 12px;
+}
+
+.mybooks-page {
+	margin-bottom: 100px;
+}
+
+.book-gallery {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.result {
+ 	width: 300px;
+ 	margin: 5px;
+ 	background-color: #fff;
+ 	border: 1px #eee solid;
+ 	text-align: left;
+ 	padding: 5px;
+ 	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 0 5px #555;
+}
+
+.book-info {
+	margin: 10px;
+  width: 220px;
+}
+
+.two-line-ellipsis {
+	overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.book-info p {
+  margin: 0;
+}
+
+.result img {
+	height: 80px;
+	width: 55px;
+	margin: 0;
+	box-shadow: 0 0 10px #555;
+}
+
+.result:hover .gallery-action-btn {
+	opacity: 100;
+	display: block;
+}
+
+.image-placeholder {
+	min-height: 80px;
+	min-width: 55px;
+	max-height: 80px;
+	max-width: 55px;
+	box-shadow: 0 0 10px #555;
+	background-color: #eee;
+	text-align: center;
+	margin: 0;
+}
+
+.image-placeholder p {
+	margin-top: 45px;
+	font-size: 10px;
+}
+
+.gallery-action-btn {
+	display: none;
+	opacity: 0;
+	transition: opacity .35s ease;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 23px;
+}
+
+#settings {
+	max-width: 600px;
+	margin: 50px auto;
+}
+
+.settings-form {
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.settings-form-card {
+	width: 500px;
+  height: 250px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -125px;
+  margin-left: -250px;
+  z-index: 101;
+  box-shadow: inset 0 0 20px #000000;
+}
+
+#password-change-form {
+	height: 350px;
+}
+
+#progress-button {
+	padding: 2px;
+}
+
+.trades-btn {
+	margin: 5px;
+}
+
+.trade-request-container {
+	display: flex;
+	justify-content: center;
+}
+
+.trade-request {
+ 	width: 300px;
+	padding: 5px;
+	margin: 2px;
+	border: #ccc 1px solid;
+}
+
+.error-message {
+	font-size: 12px;
+	background-color: rgba(247, 66, 66, 0.3);
+	width: 300px;
+	padding: 6px;
+	border: 1px red solid;
+	border-radius: 5px;
+	margin: auto;
+	color: red;
+}
