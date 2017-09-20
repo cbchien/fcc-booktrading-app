@@ -168,7 +168,7 @@ class MyBooksPage extends React.Component {
     xhr.responseType = 'json';
     xhr.addEventListener('load', () => {
       if (xhr.status === 200) {
-        console.log('success')
+        console.log('acceptTrade success')
         console.log('incomingTrades from server:')
         console.log(xhr.response.incomingTrades)
         console.log('')
@@ -199,7 +199,7 @@ class MyBooksPage extends React.Component {
         let user = this.state.user
 
         if (isIncomingTrade) {
-          console.log('response:')
+          console.log('cancelTrade response:')
           console.log(xhr.response.incomingTrades)
           user['incomingTrades'] = xhr.response.incomingTrades
           localStorage.setItem('user', JSON.stringify(user))
@@ -207,7 +207,7 @@ class MyBooksPage extends React.Component {
             user
           })
         } else {
-          console.log('response:')
+          console.log('cancelTrade response:')
           console.log(xhr.response.outgoingTrades)
           user['outgoingTrades'] = xhr.response.outgoingTrades
           localStorage.setItem('user', JSON.stringify(user))
